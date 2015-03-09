@@ -4,7 +4,8 @@ class Database{
     public static $instance
            public function getInstance(){
            
-      // Here the variable instance      
+      // Here the variable instance get called and ask to see if it's
+      // null: if it null than creates a new one otherwise it points to it.
         static $instance = null;
         if(null === $instance){
             $instance = new static();
