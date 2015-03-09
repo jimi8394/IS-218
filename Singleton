@@ -1,0 +1,17 @@
+<?php
+
+class Database{
+    public static $instance
+           public function getInstance(){
+           
+      // Here the variable instance      
+        static $instance = null;
+        if(null === $instance){
+            $instance = new static();
+        }
+        return instance;
+            }
+}
+
+?>
+
