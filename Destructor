@@ -1,0 +1,17 @@
+<?php
+// Destructor
+class HelloWorld {
+   public function __construct($temp) {
+       print "Hello $temp";
+   }
+  // Once the PHP scripting is done the function destruct will
+  // take place and destroy the object.
+  // "Hello World! Destructor!!"  : Prompt
+   public function __destruct(){
+	   print "Destructor!!";
+   }
+}
+// In HelloWorld constructor
+$obj = new HelloWorld("World!");
+
+?>
