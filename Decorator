@@ -34,6 +34,8 @@ abstract class AutoDecorator implements Automobile{
   }
 }
 $car = new VersionOne();
+$car = new VersionTwo($car);
+$car = new VersionThree($car);
 
 
 $car-> car("Car Software debugged: ")
