@@ -1,0 +1,40 @@
+<?php
+
+interface Automobile{
+    public function car($msg); 
+    
+    class VersionOne implements Automobile{
+    public function car($msg) {
+        echo "<p> Debugging <b> Version 1.0 </b> - {$msg}</p>";
+    }
+  }
+  
+//Decorator
+abstract class AutoDecorator implements Automobile{
+    public function __construct(Automobile $Automobile) {
+     $this->Automobile = $Automobile;
+}
+        pulbic function car($msg){
+        $this->Automobile = car($msg);
+    }
+  }
+  
+ class VersionTwo extends AutoDecorator{
+    public function car($msg) {
+        $this->Automobile = car($msg);
+        echo "<p> Debugging <b> Version 2.0 </b> - {$msg}</p>";
+    }
+  }
+  
+  class VersionThree extends AutoDecorator{
+    public function car($msg) {
+        $this->Automobile = car($msg);
+        echo "<p> Debugging <b> Version 3.0 </b> - {$msg}</p>";
+    }
+  }
+}
+
+
+$car-> car("Car Software debugged: ")
+
+?>
