@@ -1,0 +1,25 @@
+<?php
+class Name{
+    public $FirstName;
+    public $LastName;
+    
+    public function __construct($first, $last) {
+        $this->FirstName = $first;
+        $this->LastName = $last;        
+    }
+    public function getFirstandLast(){
+        return $this->FirstName . ' ' . $this->LastName;
+    }            
+}
+class NameFactory {
+    public function create($first, $last)
+    {
+        return new Name($first, $last);
+    }
+}
+
+$identity = NameFactory::create ('Jimmy','Patel');
+print_r($identity->getFirstandLast());
+?>
+
+ 
