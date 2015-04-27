@@ -1,13 +1,25 @@
 
 //Constructor
 <?php
-namespace temp;
-class helloworld {
-    public function helloworld () {
-        echo "This is Hello World Program!";
-    }
+class cons {
+   public function __construct($cons) {
+       print "Hello $temp";
+   }
 }
 ?>
 
 
 //Destructor
+<?php
+class desc {
+   public function __construct($desc) {
+       print "Hello $temp";
+   }
+   public function __destruct(){
+	   print "Destructor!!";
+   }
+}
+// In HelloWorld constructor
+$obj = new HelloWorld("World!");
+
+?>
