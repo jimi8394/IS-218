@@ -1,0 +1,13 @@
+
+//Constructor
+<?php
+namespace temp;
+class helloworld {
+    public function helloworld () {
+        echo "This is Hello World Program!";
+    }
+}
+?>
+
+
+//Destructor
